@@ -2,5 +2,57 @@ extends ../loyout
 
 block variables
     - var title= "Новый проект"
+
 block content
-    
+    header.header
+        .container 
+            .header-block
+                .logo
+                    img.logo__img(src="images/content/logo.png", alt="") 
+                nav.nav
+                    ul.nav__list
+                        li.nav__list_item
+                            a.nav__list_link(href="#") Мероприятие
+                        li.nav__list_item
+                            a.nav__list_link(href="#") Об автомобиле
+                        li.nav__list_item
+                            a.nav__list_link(href="#") О героях
+    section.hero
+        .hero__info
+            ul.info
+                li.info__item
+                    a.info__item_link.info__item_link--save(href="") Скачать брошюру
+                li.info__item
+                    a.info__item_link.info__item_link--diller(href="") Найти диллера
+                li.info__item
+                    a.info__item_link.info__item_link--test(href="") Тест-драйв
+        .hero-block
+        .hero-content
+            h1.main-title Всероссийская 
+                <br> премьера 
+                <br> c 16 ноября
+            .hero-block__btn
+                a.btn.btn--red.btn--big(href="") 
+                    span Регистрация на мероприятие
+                a.btn.btn--white.btn--big(href="") 
+                    span Подробнее об автомобиле
+        .hero__timer
+            .timer 
+                .timer__row
+                    .timer__text 
+                        span.text-red Не пропустите! 
+                        | До премьеры осталось
+                .timer__row
+                    .counter
+                        .counter__item.counter__item--day
+                            span.counter__item_num 10
+                            span.counter__item_text Дней
+                        .counter__item.counter__item--hour
+                            span.counter__item_num 20
+                            span.counter__item_text Часов
+                        .counter__item.counter__item--min
+                            span.counter__item_num 40
+                            span.counter__item_text Минут
+                    a.btn.btn--green.btn--big(href="") 
+                        span Подробнее об автомобиле
+

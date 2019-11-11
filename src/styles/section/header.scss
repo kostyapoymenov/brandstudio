@@ -1,0 +1,34 @@
+.header {
+  background-color: $white;
+  position: relative;
+}
+.header-block {
+  display: flex;
+  padding: 10px 0;
+}
+.logo {
+  height: 40px;
+  width: auto;
+  position: relative;
+  margin-right: rem(25px);
+  &__img {
+    max-height: 100%;
+    width: auto;
+  }
+}
+.nav__list {
+  padding: 0 rem(5px);
+}
+.nav__list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav__list_item {
+  padding: 5px rem(20px);
+}
+.nav__list_link {
+  @include font-size(14px);
+  color: $darkGreen;
+  transform: skew(-12deg);
+}

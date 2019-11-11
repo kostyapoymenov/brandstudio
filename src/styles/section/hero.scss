@@ -1,0 +1,130 @@
+.hero {
+  box-shadow: 0px 11px 10px -10px rgba(50, 50, 50, 0.75);
+  z-index:0;
+}
+.hero__info {
+  position: absolute;
+  left: 77%;
+  top: 0;    
+  transform: skew(-12deg);
+}
+.info__item_link {
+  @include font-size(14px);
+  color: $darkGreen;
+  font-style: italic;    
+  padding: 0 0 0 30px;
+  margin-bottom: 15px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 25px;
+    left: 0;
+    top: 50%;
+    transform: skew(12deg) translateY(-50%);
+    background-repeat: no-repeat;
+  }
+  &--save {
+    &:before {
+      background-image: url(../images/icons/save.png);
+    }
+  }
+  &--diller {
+    &:before {
+      background-image: url(../images/icons/map.png);
+      left: 3px;
+    }
+  }
+  &--test {
+    &:before {
+      background-image: url(../images/icons/rool.png);
+    }
+  }
+}
+.hero-block {
+  background-image: url(../images/bg/hero1.jpg);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 100%;    
+  padding-top: 36%;
+}
+.hero-content {
+  position: absolute;
+  top: rem(50px);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-title {
+  text-transform: uppercase;
+  transform: skew(-12deg);
+  font-weight: 900;
+  @include font-size(50px);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.hero-block__btn {
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  .btn {
+    max-width: 345px;
+  }
+}
+.hero__timer {
+  position: absolute;
+  bottom: 3%;
+  left: 39%;
+  max-width: 1000px;
+  width: 100%;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+.timer__row {
+  display: flex;
+  align-items: flex-end;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.timer__text {
+  font-weight: 700;
+  font-style: italic;
+  padding: 10px 25px;
+  transform: skew(-12deg);
+}
+.counter__item  {
+  position: relative;
+  padding: 0 20px;
+  &_num {
+    font-style: italic;
+    font-weight: 900;
+    @include font-size(50px);
+    color: $darkGreen;
+  }
+  &_text {
+    font-style: italic;
+    font-weight: 300;
+    @include font-size(14px);
+    color: #b9b9b9;
+  }
+  &:first-child::after{
+    padding-left: 0;
+  }
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 20px;
+    background: #b9b9b9;
+    transform: skew(-12deg);
+  }
+}

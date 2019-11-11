@@ -4,3 +4,66 @@
   margin: 0 auto;
   position: relative;
 }
+.btn {
+  display: inline-block;
+  min-width: rem(175px);
+  font-weight: 500;
+  @include font-size(16px);
+  font-style: italic;
+  text-align: left;
+  transition: all 0.3s ease-out;
+  outline:none;
+  padding: rem(15px) rem(35px);
+  margin-bottom: 12px;
+  transform: skew(-20deg);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    right: 30px;
+    top: calc(50% - 2px);
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    border-color: $white;
+    transform:rotate(45deg);
+  }
+  span {
+    display: inline-block;
+    transform: skew(20deg);
+  }
+  &--green {
+    color: $white;
+    background-color: $darkGreen;
+  }
+  &--red {
+    color: $white;
+    background-color: $red;
+    &::before {
+      border-color: $white;
+    }
+  }
+  &--white {
+    color: $darkGreen;
+    background-color: $white;
+    &::before {
+      border-color: $red;
+    }
+  }
+  &--big {
+    min-width: 340px;
+    padding-right: 60px;
+  }
+}
+.text-red {
+  color: $red;
+}
+.section-title {
+  @include font-size(40px);
+  color: $darkGreen;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform: skew(-12deg);
+}
