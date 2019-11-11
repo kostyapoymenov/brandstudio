@@ -6,6 +6,7 @@
 }
 .more__block {
   display: flex;
+  padding: 0 35px;
 }
 .more-item {
   height: 165px;
@@ -13,6 +14,17 @@
   margin: 10px 10px 0 0;
   transform: skew(-21deg);
   overflow: hidden;
+  transition: all .3s ease-out;
+  &:hover {
+    transition: all .3s ease-out;
+    cursor: pointer;
+    .more-item__descript {
+      background-color: $red;
+      span::before {
+        border-color: $white;
+      }
+    }
+  }
 }
 .more-item__pic {
   height: 100%;
@@ -21,22 +33,22 @@
   background-size: auto 100%;
   &--event {
     background-image: url(../images/content/more1.webp);
-    transform: skew(21deg) translateX(-20%);
+    transform: skew(21deg) translateX(-18%);
     background-size: 110%;
   }
   &--detail {
     background-image: url(../images/content/more2.webp);
-    transform: skew(21deg) translateX(-20%);
+    transform: skew(21deg) translateX(-18%);
     background-size: 110%;
   }
   &--hero {
     background-image: url(../images/content/more3.webp);
-    transform: skew(21deg) translateX(-23%);
+    transform: skew(21deg) translateX(-21%);
     background-size: 110%;
   }
   &--video {
     background-image: url(../images/content/more4.webp);
-    transform: skew(21deg) translateX(-20%);
+    transform: skew(21deg) translateX(-21%);
     background-size: 110%;
   }
 }

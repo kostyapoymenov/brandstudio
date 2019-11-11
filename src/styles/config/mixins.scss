@@ -14,6 +14,30 @@
   }
 }
 
+@mixin laptop1600 {
+  @media screen and (max-width: $laptop1600) {
+    @content
+  }
+}
+
+@mixin laptop1500 {
+  @media screen and (max-width: $laptop1500) {
+    @content
+  }
+}
+
+@mixin laptop1460 {
+  @media screen and (max-width: $laptop1460) {
+    @content
+  }
+}
+
+@mixin laptop1300 {
+  @media screen and (max-width: $laptop1460) {
+    @content
+  }
+}
+
 @mixin phones {
   @media screen and (max-width: $phones) {
     @content

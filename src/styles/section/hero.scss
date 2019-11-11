@@ -4,16 +4,18 @@
 }
 .hero__info {
   position: absolute;
-  left: 77%;
-  top: 0;    
+  left: 76%;
+  top: -5px;    
   transform: skew(-12deg);
+}
+.info__item {
+  margin-bottom: 15px;
 }
 .info__item_link {
   @include font-size(14px);
   color: $darkGreen;
   font-style: italic;    
   padding: 0 0 0 30px;
-  margin-bottom: 15px;
   &:before {
     content: '';
     position: absolute;
@@ -54,7 +56,6 @@
   left: 50%;
   transform: translateX(-50%);
   max-width: 1150px;
-  margin: 0 auto;
   width: 100%;
 }
 .main-title {
@@ -66,7 +67,6 @@
   margin-bottom: 10px;
 }
 .hero-block__btn {
-  padding-right: 10%;
   display: flex;
   flex-direction: column;
   .btn {
@@ -88,15 +88,24 @@
   display: flex;
   align-items: flex-end;
 }
+.timer__row-left,
+.timer__row-right {
+  width: 50%;
+}
+
 .counter {
   display: flex;
   align-items: center;
-  width: 50%;
+  .btn {
+    &::before {
+      border-color: $white;
+    }
+  }
 }
 .timer__text {
   font-weight: 700;
   font-style: italic;
-  padding: 10px 25px;
+  padding: 10px 25px 0 45px;
   transform: skew(-12deg);
 }
 .counter__item  {
@@ -107,6 +116,7 @@
     font-weight: 900;
     @include font-size(50px);
     color: $darkGreen;
+    line-height: 1.3;
   }
   &_text {
     font-style: italic;

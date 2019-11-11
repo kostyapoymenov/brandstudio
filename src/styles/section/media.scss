@@ -1,0 +1,37 @@
+@include laptop1600 {
+  .hero__timer {
+    max-width: 900px;
+  }
+}
+@include laptop1500 {
+  .info__item {
+    margin-bottom: 10px;
+  }
+  .main-title {
+    @include font-size(40px)
+  }
+  .hero__timer {
+    max-width: 870px;
+  }
+  .btn--big {
+    min-width: auto;
+  }
+}
+@include laptop1460 {
+  .counter__item_num {
+    @include font-size(40px)
+  }
+  .more__block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@include laptop1300 {
+  .hero-content {
+    top: 25px;
+    max-width: 1000px;
+  }
+  .main-title {
+    @include font-size(35px)
+  }
+}

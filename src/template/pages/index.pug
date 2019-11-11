@@ -4,92 +4,130 @@ block variables
     - var title= "Новый проект"
 
 block content
-    header.header
-        .container 
-            .header-block
-                .logo
-                    img.logo__img(src="images/content/logo.png", alt="") 
-                nav.nav
-                    ul.nav__list
-                        li.nav__list_item
-                            a.nav__list_link(href="#") Мероприятие
-                        li.nav__list_item
-                            a.nav__list_link(href="#") Об автомобиле
-                        li.nav__list_item
-                            a.nav__list_link(href="#") О героях
-    section.hero
-        .hero__info
-            ul.info
-                li.info__item
-                    a.info__item_link.info__item_link--save(href="") Скачать брошюру
-                li.info__item
-                    a.info__item_link.info__item_link--diller(href="") Найти диллера
-                li.info__item
-                    a.info__item_link.info__item_link--test(href="") Тест-драйв
-        .hero-block
-        .hero-content
-            h1.main-title Всероссийская 
-                <br> премьера 
-                <br> c 16 ноября
-            .hero-block__btn
-                a.btn.btn--red.btn--big(href="") 
-                    span Регистрация на мероприятие
-                a.btn.btn--white.btn--big(href="") 
-                    span Подробнее об автомобиле
-        .hero__timer
-            .timer 
-                .timer__row
-                    .timer__text 
-                        span.text-red Не пропустите! 
-                        | До премьеры осталось
-                .timer__row
-                    .counter
-                        .counter__item.counter__item--day
-                            span.counter__item_num 10
-                            span.counter__item_text Дней
-                        .counter__item.counter__item--hour
-                            span.counter__item_num 20
-                            span.counter__item_text Часов
-                        .counter__item.counter__item--min
-                            span.counter__item_num 40
-                            span.counter__item_text Минут
-                    a.btn.btn--green.btn--big(href="") 
+    .wrapper
+        header.header
+            .container 
+                .header-block
+                    .logo
+                        img.logo__img(src="images/content/logo.png", alt="") 
+                    nav.nav
+                        ul.nav__list
+                            li.nav__list_item
+                                a.nav__list_link(href="#") Мероприятие
+                            li.nav__list_item
+                                a.nav__list_link(href="#") Об автомобиле
+                            li.nav__list_item
+                                a.nav__list_link(href="#") О героях
+        section.hero
+            .hero__info
+                ul.info
+                    li.info__item
+                        a.info__item_link.info__item_link--save(href="") Скачать брошюру
+                    li.info__item
+                        a.info__item_link.info__item_link--diller(href="") Найти диллера
+                    li.info__item
+                        a.info__item_link.info__item_link--test(href="") Тест-драйв
+            .hero-block
+            .hero-content
+                h1.main-title Всероссийская 
+                    <br> премьера 
+                    <br> c 16 ноября
+                .hero-block__btn
+                    a.btn.btn--red.btn--big(href="") 
+                        span Регистрация на мероприятие
+                    a.btn.btn--white.btn--big(href="") 
                         span Подробнее об автомобиле
-    section.more
-        .container
-            .more-wrap
-                h2.section-title Хотите узать больше? 
-                .more__block 
-                    a.more-item.more-item--event(href="")
-                        .more-item__pic.more-item__pic--event
-                        .more-item__descript 
-                            span Мероприятие
-                    a.more-item.more-item--detail(href="")
-                        .more-item__pic.more-item__pic--detail
-                        .more-item__descript 
-                            span Подробнее о RAV4
-                    a.more-item.more-item--hero(href="")
-                        .more-item__pic.more-item__pic--hero
-                        .more-item__descript 
-                            span Герои
-                    a.more-item.more-item--video(href="")
-                        .more-item__pic.more-item__pic--video
-                        .more-item__descript 
-                            span Все видео
-            .order-wrap
-                form.form(action="")
-                h2.section-title Заказатьобратный звонок
-                .form-description Хотите узнать больше об абсолютно новом Toyota RAV4? Заполните форму ниже, и сотрудник дилерского центра перезвонит в ближайшее время 
-                .form-block
-                    .form-block__item
-                        label.form-block__item-name(for="") Имя 
-                        input.form-block__item-input(type="text")
-                    .form-block__item
-                        label.form-block__item-name(for="") Телефон
-                        input.form-block__item-input(type="text")
-                    .form-block__item
-                        label.form-block__item-name(for="") Ваш город
-                        select.form-block__item-select(name="")
-                    .form-block__item
-                        label.form-block__item-name(for="") Ваш диллерский центр
-                        select.form-block__item-select(name="")
+            .hero__timer
+                .timer 
+                    .timer__row
+                        .timer__text 
+                            span.text-red Не пропустите! 
+                            | До премьеры осталось
+                    .timer__row
+                        .timer__row-left
+                            .counter
+                                .counter__item.counter__item--day
+                                    span.counter__item_num 10
+                                    span.counter__item_text Дней
+                                .counter__item.counter__item--hour
+                                    span.counter__item_num 20
+                                    span.counter__item_text Часов
+                                .counter__item.counter__item--min
+                                    span.counter__item_num 40
+                                    span.counter__item_text Минут
+                        .timer__row-right
+                            a.btn.btn--green.btn--big(href="") 
+                                span Зарегистрироваться
+        section.more
+            .container
+                .more-wrap
+                    h2.section-title Хотите узать больше? 
+                    .more__block 
+                        a.more-item.more-item--event(href="")
+                            .more-item__pic.more-item__pic--event
+                            .more-item__descript 
+                                span Мероприятие
+                        a.more-item.more-item--detail(href="")
+                            .more-item__pic.more-item__pic--detail
+                            .more-item__descript 
+                                span Подробнее о RAV4
+                        a.more-item.more-item--hero(href="")
+                            .more-item__pic.more-item__pic--hero
+                            .more-item__descript 
+                                span Герои
+                        a.more-item.more-item--video(href="")
+                            .more-item__pic.more-item__pic--video
+                            .more-item__descript 
+                                span Все видео
+                .order-wrap
+                    form.form(action="")
+                    h2.section-title Заказатьобратный звонок
+                    .form-description Хотите узнать больше об абсолютно новом Toyota RAV4? Заполните форму ниже, и сотрудник дилерского центра перезвонит в ближайшее время 
+                    .form-block
+                        .form-block__item
+                            label.form-block__item-label(for="") Имя 
+                            .form-block__item-wrap
+                                input.form-block__item-input(type="text" placeholder="Введите имя на русском")
+                        .form-block__item
+                            label.form-block__item-label(for="") Телефон
+                            .form-block__item-wrap
+                                input.form-block__item-input(type="text" placeholder="+7 123 456-78-10")
+                        .form-block__item
+                            label.form-block__item-label(for="") Ваш город
+                            .form-block__item-wrap
+                                .select--arrow
+                                select.form-block__item-select(name="select-city")
+                                    option(value="1") Город 1
+                                    option(value="2") Город 2
+                                    option(value="3") Город 3
+                        .form-block__item
+                            label.form-block__item-label(for="") Ваш диллерский центр
+                            .form-block__item-wrap
+                                .select--arrow
+                                select.form-block__item-select(name="select-diller")
+                                    option(value="1") Диллер 1
+                                    option(value="2") Диллер 2
+                                    option(value="3") Диллер 3
+                    .policy
+                        .policy__block
+                            .policy__block_content
+                                ul
+                                    li Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    li Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    li Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    li Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat. 
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus lacus, dictum eget libero fringilla, ornare volutpat neque volutpat.
+                    .check-policy
+                        input.check-policy__input(id="userAgreement" type="checkbox" name="form-policy" value="Согласие на политику конфиденциальности" checked="")
+                        .my-checkbox
+                        label.block-policy__label(for="userAgreement") Я согласен на передачу и обработку персональных данных и получение рекламно-информационных рассылок от Toyota
+                    .form__button-block
+                        button.btn.btn--green(type="submit") 
+                            span Отправить

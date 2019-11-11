@@ -7,6 +7,10 @@
 @import "config/mixins.scss";
 
 //resolution
+$laptop1600: 1600px;
+$laptop1500: 1500px;
+$laptop1460: 1460px;
+$laptop1300: 1300px;
 $tablets: 768px;
 $phones: 667px;
 $phones-xs: 568px;
@@ -20,6 +24,7 @@ $phones-xs: 568px;
 @import "section/header.scss";
 @import "section/hero.scss";
 @import "section/more.scss";
+@import "section/form.scss";
 @import "section/footer.scss";
 
 

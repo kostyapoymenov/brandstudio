@@ -54,11 +54,16 @@ textarea {
 input,
 textarea,
 select {
-  border: 1px solid $black;
-  @include font-size(18px);
+  @include font-size(14px);
   line-height: 18px;
   outline: none;
   appearance: none;
+  color: #babbb9;
+  border: none;
+  color: #8b8b8b;
+}
+select {
+  width: 100%;
 }
 section {
   width: 100%;
