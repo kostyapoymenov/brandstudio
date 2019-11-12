@@ -38,6 +38,12 @@
   }
 }
 
+@mixin laptop1250 {
+  @media screen and (max-width: $laptop1460) {
+    @content
+  }
+}
+
 @mixin phones {
   @media screen and (max-width: $phones) {
     @content

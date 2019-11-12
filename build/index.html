@@ -6,13 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Новый проект</title>
     <link rel="shortcut icon" href="images/content/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
     <div class="wrapper">
+      <div class="mob-menu">
+        <div class="mob-menu__logo">
+          <div class="logo"><img class="logo__img" src="images/content/logo.png" alt=""></div>
+        </div>
+        <div class="mob-menu__block">
+          <ul class="mob-menu__list">
+            <li class="mob-menu__list_item"><a class="mob-menu__list_link" href="#">Мероприятие</a></li>
+            <li class="mob-menu__list_item"><a class="mob-menu__list_link" href="#">Об автомобиле</a></li>
+            <li class="mob-menu__list_item"><a class="mob-menu__list_link" href="#">О героях</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu__block">
+          <ul class="info">
+            <li class="info__item"><a class="info__item_link info__item_link--save" href="">Скачать брошюру</a></li>
+            <li class="info__item"><a class="info__item_link info__item_link--diller" href="">Найти диллера</a></li>
+            <li class="info__item"><a class="info__item_link info__item_link--test" href="">Тест-драйв</a></li>
+          </ul>
+        </div>
+      </div>
       <header class="header">
         <div class="container"> 
           <div class="header-block">
+            <div class="burger-block">
+              <div class="burger"><span class="burger__line burger__line--1"></span><span class="burger__line burger__line--2"></span><span class="burger__line burger__line--3"></span></div>
+            </div>
             <div class="logo"><img class="logo__img" src="images/content/logo.png" alt=""></div>
             <nav class="nav">
               <ul class="nav__list">
@@ -38,6 +60,8 @@
             Всероссийская <br> премьера 
 <br> c 16 ноября
           </h1>
+          <h1 class="main-title main-title--mob">
+            Всероссийская <br> премьера c 16 ноября</h1>
           <div class="hero-block__btn"><a class="btn btn--red btn--big" href=""> <span>Регистрация на мероприятие</span></a><a class="btn btn--white btn--big" href=""> <span>Подробнее об автомобиле</span></a></div>
         </div>
         <div class="hero__timer">
@@ -74,7 +98,7 @@
           </div>
           <div class="order-wrap">
             <form class="form" action=""></form>
-            <h2 class="section-title">Заказатьобратный звонок</h2>
+            <h2 class="section-title">Заказать обратный звонок</h2>
             <div class="form-description">Хотите узнать больше об абсолютно новом Toyota RAV4? Заполните форму ниже, и сотрудник дилерского центра перезвонит в ближайшее время </div>
             <div class="form-block">
               <div class="form-block__item">

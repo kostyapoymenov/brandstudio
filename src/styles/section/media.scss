@@ -25,6 +25,20 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .hero__timer {
+    max-width: 750px;
+  }
+  .counter__item_num {
+    @include font-size(30px)
+  }
+  .timer__row-right {
+    .btn {
+      padding: 15px 30px 15px 15px;
+      &:before {
+        right: 15px;
+      }
+    }
+  }
 }
 @include laptop1300 {
   .hero-content {
@@ -33,5 +47,134 @@
   }
   .main-title {
     @include font-size(35px)
+  }
+  .hero__timer {
+    max-width: 650px;
+  }
+  .timer__row-left {
+    width: 65%;
+  }
+  .timer__row-right {
+    width: 35%;
+  }
+  .hero__info {
+    top: -20px
+  }
+}
+@include tablets {
+  .container {
+    padding: 0 15px;
+  }
+  .hero__timer {
+    left: 50%;
+    transform: translate(-50%);
+    top: 28%;
+  }
+  .timer__row:last-child {
+    flex-direction: column;
+  }
+  .timer__row-left {
+    margin-bottom: 20px;
+  }
+  .hero-content {
+    top: 70px;
+  }
+  .hero-block {
+    background-image: url(../images/bg/hero-mob.jpg);
+    padding-top: 100vh;
+  }
+  .main-title {
+      display: none;
+    &--mob {
+      display: block;
+      @include font-size(50px);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  .hero-block__btn {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 20%;
+  }
+  .timer__row {
+    justify-content: center;
+  }
+  .timer__text {
+    @include font-size(20px);
+    padding: 10px 25px 0 25px;
+  }
+  .counter__item_num {
+    @include font-size(50px);
+  }
+  .hero__info {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    top: -60px;
+  }
+}
+
+@include phones {
+  .section-title {
+    @include font-size(30px);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-block {
+    flex-wrap: wrap;
+  }
+  .form-block__item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  .hero-content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 20;
+  }
+  .hero-block__btn {
+    flex-direction: column;
+  }
+  .hero-block__btn {
+    .btn {
+      width: 100%;
+    }
+  }
+  .main-title--mob {
+    @include font-size(35px);
+  }
+  .hero__timer {
+    bottom: 30%;
+    top: 21%;
+  }
+  .timer__row-left{
+    width: 100%;
+  }
+  .counter {
+    justify-content: center;
+  }
+  .timer__row-right {
+    width: 100%;
+    text-align: center;
+  }
+  .nav,
+  .hero__info {
+    display: none;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .header-block {
+    padding: 15px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .burger-block,
+  .mob-menu {
+    display: block;
   }
 }

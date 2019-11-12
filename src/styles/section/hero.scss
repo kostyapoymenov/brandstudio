@@ -65,6 +65,9 @@
   @include font-size(50px);
   line-height: 1.2;
   margin-bottom: 10px;
+  &--mob {
+    display: none;
+  }
 }
 .hero-block__btn {
   display: flex;
@@ -86,7 +89,7 @@
 }
 .timer__row {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .timer__row-left,
 .timer__row-right {

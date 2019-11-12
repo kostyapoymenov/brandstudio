@@ -5,9 +5,34 @@ block variables
 
 block content
     .wrapper
+        .mob-menu
+            .mob-menu__logo
+                .logo
+                    img.logo__img(src="images/content/logo.png", alt="")
+            .mob-menu__block
+                ul.mob-menu__list
+                    li.mob-menu__list_item
+                        a.mob-menu__list_link(href="#") Мероприятие
+                    li.mob-menu__list_item
+                        a.mob-menu__list_link(href="#") Об автомобиле
+                    li.mob-menu__list_item
+                        a.mob-menu__list_link(href="#") О героях
+            .mob-menu__block
+                ul.info
+                    li.info__item
+                        a.info__item_link.info__item_link--save(href="") Скачать брошюру
+                    li.info__item
+                        a.info__item_link.info__item_link--diller(href="") Найти диллера
+                    li.info__item
+                        a.info__item_link.info__item_link--test(href="") Тест-драйв
         header.header
             .container 
                 .header-block
+                    .burger-block
+                        .burger
+                            span.burger__line.burger__line--1
+                            span.burger__line.burger__line--2
+                            span.burger__line.burger__line--3
                     .logo
                         img.logo__img(src="images/content/logo.png", alt="") 
                     nav.nav
@@ -32,6 +57,8 @@ block content
                 h1.main-title Всероссийская 
                     <br> премьера 
                     <br> c 16 ноября
+                h1.main-title.main-title--mob Всероссийская 
+                    <br> премьера c 16 ноября
                 .hero-block__btn
                     a.btn.btn--red.btn--big(href="") 
                         span Регистрация на мероприятие
@@ -81,7 +108,7 @@ block content
                                 span Все видео
                 .order-wrap
                     form.form(action="")
-                    h2.section-title Заказатьобратный звонок
+                    h2.section-title Заказать обратный звонок
                     .form-description Хотите узнать больше об абсолютно новом Toyota RAV4? Заполните форму ниже, и сотрудник дилерского центра перезвонит в ближайшее время 
                     .form-block
                         .form-block__item

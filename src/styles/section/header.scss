@@ -32,3 +32,124 @@
   color: $darkGreen;
   transform: skew(-12deg);
 }
+.mob-menu {
+  display: none;
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    background-color: $white;
+    transform: translateX(-1000px);
+    transition: all .5s ease-out;
+    &--active {
+      transform: translateX(0px);
+      transition: all .5s ease-out;
+    }
+}
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+.mob-menu__list_item {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.mob-menu__list_link {
+  @include font-size(24px);
+  color: $darkGreen;
+  font-style: italic;
+}
+.mob-menu__logo {
+  text-align: center;
+  padding: 20px 0;
+}
+.mob-menu__block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  .info {
+    transform: skew(-12deg);
+  }
+}
+.burger-block {
+  display: none;
+  position: absolute;
+  left: 15px;
+  z-index: 100000;
+}
+.burger {
+  position: absolute;
+  left: 15px;
+  display: block;
+  width: 35px;
+  height: 54px;
+  transition: all .4s;
+  cursor: pointer;
+  position: relative;
+  &--active {
+    .burger__line--1 {
+      animation: burgerline1 .4s forwards;
+    }
+    .burger__line--2 {
+      animation: burgerline2 .4s forwards;
+    }
+    .burger__line--3 {
+      animation: burgerline3 .4s forwards;
+    }
+  }
+}
+.burger__line {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  background: $red;
+  transition: all .4s;
+  pointer-events: none;
+  &--1 {
+    top: 16px;
+  }
+  &--2 {
+    top: 24px;
+  }
+  &--3 {
+    top: 32px;
+  }
+}
+@keyframes burgerline1 {
+  0% {
+      top: 16px;
+  }
+  50% {
+      top: 24px;
+      transform: rotate(0);
+  }
+  100% {
+      top: 24px;
+      transform: rotate(45deg);
+  }
+}
+@keyframes burgerline2 {
+  0% {}
+  50% {}
+  100% {
+      opacity: 0;
+  }
+}
+@keyframes burgerline3 {
+  0% {
+      top: 32px;
+  }
+  50% {
+      top: 24px;
+      transform: rotate(0);
+  }
+  100% {
+      top: 24px;
+      transform: rotate(-45deg);
+  }
+}
